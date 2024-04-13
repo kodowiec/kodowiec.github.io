@@ -1,0 +1,46 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #018281;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 15%; /* Szerokość menu bocznego */
+    background-color: rgba(255, 255, 255, 0.4); /* Białe tło menu */
+    padding: 20px;
+    flex-direction: column; /* Wyśrodkowanie wertykalne */
+    justify-content: space-between; /* Rozciągnięcie na całą wysokość */
+}
+
+.content {
+    width: 80%; /* Szerokość zawartości */
+    background-color: rgba(255,255,255,0.9); /* Białe tło zawartości */
+    padding: 30px;
+    margin: 30px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        width: 100%;
+    }
+}
