@@ -1,0 +1,146 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #487eb0;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    height: 100%;
+}
+
+.top-bar {
+    visibility: hidden;
+    display: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.sidebar, .top-bar {
+    width: 15%; /* Szerokość menu bocznego */
+    background-color: rgba(255, 255, 255, 0.4); /* Białe tło menu */
+    padding: 20px;
+    flex-direction: column; /* Wyśrodkowanie wertykalne */
+    justify-content: space-between; /* Rozciągnięcie na całą wysokość */
+}
+
+.obrazek-pieska
+{
+    max-width: 90%;
+}
+
+.content {
+    width: 80%; /* Szerokość zawartości */
+    background-color: rgba(255,255,255,0.9); /* Białe tło zawartości */
+    padding: 30px;
+    margin: 30px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.content > img {
+    width: 70%;
+}
+
+/* Responsywność */
+
+
+/* tablety */
+@media (max-width: 1000px) {
+    .container {
+        padding: 0;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .content
+    {
+        margin: 2vw;
+        width: auto;
+        border-radius: 4px;
+    }
+    .sidebar {
+        width: auto;
+        min-width: 130px;
+    }
+
+}
+
+/* telefony */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .top-bar {
+        visibility: visible;
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        width: auto;
+        height: 5vh;
+        min-height: 30px;
+        padding: 3vh;
+    }
+
+    .content
+    {
+        margin: 2vw;
+        width: auto;
+        border-radius: 4px;
+    }
+    .sidebar {
+        width: auto;
+    }
+
+    .top-bar-btn
+    {
+        width: 10vw;
+        max-width: 50px;
+        min-height: 10px !important;
+        height: 1vh !important;
+        height: auto !important;
+        margin: 0px !important;
+        align-self: center;
+    }
+
+    .btn-container {
+        width: 10vw;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        flex: 0 1 auto;
+    }
+
+    .img-container {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        flex: 1 0;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .obrazek-pieska {
+        max-height: 8vh;
+        max-width: 50%;
+        min-height: 50px;
+        align-self: center;
+    }
+
+    .mobile-display-none
+    {
+        display: none;
+    }
+}

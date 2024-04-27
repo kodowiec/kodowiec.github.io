@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="buttons.css"/>
+    <!-- google fonts tylko do czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- google fonts tylko do czcionki -->
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar" id="top-bar">
+            <!-- gorne menu dla mobilnych-->
+            <div class="btn-container">
+                <button class="button-13 top-bar-btn" onclick="toggleMenu()">=</button>
+            </div>
+            <div class="img-container">
+                <img class="obrazek-pieska" src="dog.png" alt="piesek obrazek" />
+            </div>
+            <div class="btn-container">
+            </div>
+        </div>
+        <div class="sidebar mobile-display-none" id="sidebar">
+            <!-- Menu boczne -->
+            <center>
+                <img class="obrazek-pieska mobile-display-none" src="dog.png" alt="piesek obrazek" /><br/>
+                <a href="#" class="button-13-active">Strona główna</a><br/>
+                <a href="obrazek.html" class="button-13">Strona z obrazkiem</a>
+            </center>
+        </div>
+        <div class="content">
+            <!-- Zawartość strony -->
+            <h1>System Windows - zapraszamy!</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur enim mi, ut luctus orci viverra sed. Vivamus bibendum accumsan velit non maximus. Nam nec tellus nisl. Fusce non commodo turpis, ac mattis elit. Cras sit amet lectus nulla. Maecenas convallis sapien in scelerisque sollicitudin. Vivamus sodales suscipit iaculis. Donec vel urna pellentesque orci mattis aliquet. Integer pulvinar ante quam, vitae lacinia ligula tempus sit amet. Vivamus mollis efficitur porta. Nulla non feugiat enim. Duis rhoncus interdum odio, vitae commodo urna dapibus vel.</p>
+
+            <p>Praesent placerat eget eros non ornare. Phasellus ac ligula a turpis efficitur pulvinar. Pellentesque ac risus odio. Duis non tellus massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempus pharetra diam a lacinia. Vestibulum augue libero, finibus eget arcu id, volutpat venenatis nisl. Nam non scelerisque risus. Donec ullamcorper dui mauris, non congue tortor dapibus nec. Sed ultricies enim vitae massa interdum, at sollicitudin risus tincidunt. Sed id enim sit amet nulla pellentesque tincidunt id non est.</p>
+
+            <p>Morbi tristique purus non risus tincidunt, a molestie orci finibus. Vestibulum mattis quam felis, id sodales leo lobortis vitae. Donec volutpat cursus lorem, vel malesuada leo vestibulum sit amet. Ut vel est pretium, varius erat sit amet, tincidunt diam. Suspendisse placerat est eget laoreet condimentum. Vivamus sollicitudin, sapien vel tempor elementum, urna lectus rutrum orci, ac cursus lacus tortor sed lacus. Suspendisse ultrices eros mauris, scelerisque finibus augue hendrerit aliquam. Suspendisse sed gravida felis. Pellentesque nulla elit, mollis ut libero eget, efficitur faucibus eros. Curabitur interdum consectetur dolor, non pellentesque odio mollis iaculis. Vestibulum at turpis felis. Curabitur vitae libero blandit, lacinia dui id, auctor augue. Suspendisse nec vestibulum ipsum. Nunc quis velit nec nisl vulputate vulputate in vitae orci.</p>
+
+            <p>Donec sit amet arcu sit amet elit sagittis sagittis. Duis est orci, dapibus accumsan gravida nec, tempor vitae sem. Sed condimentum leo at ipsum iaculis, quis dictum orci pellentesque. Nunc sagittis diam sit amet nisl eleifend volutpat. Cras gravida diam eget dictum rutrum. Sed tempor odio magna, nec malesuada ligula posuere nec. Integer at cursus est. Etiam tempus ac est ac efficitur. Sed pretium odio et interdum faucibus. Mauris tristique sit amet sapien ac porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam lobortis neque id ex euismod convallis. Quisque feugiat porttitor orci ultricies vulputate. Ut tristique euismod mi, quis ultricies mi sollicitudin vel. Cras vel vehicula enim, vel lobortis justo. Vestibulum dignissim quam a lobortis ultricies.</p>
+
+            <p>Curabitur lacinia sed neque nec laoreet. Mauris vehicula tellus sed mattis interdum. Aliquam nec mattis ligula, quis dictum quam. Nullam maximus, diam ac luctus aliquet, odio ex dignissim nulla, facilisis pellentesque sem dui ac tellus. Aliquam condimentum dui et tempor suscipit. Duis ut aliquet turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus odio metus, ultrices nec eros at, pretium finibus eros. In mollis scelerisque condimentum. Aliquam turpis augue, tincidunt aliquet mauris a, rutrum interdum dui.</p>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
